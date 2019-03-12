@@ -5,77 +5,99 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700|Space+Mono" rel="stylesheet"> 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
       <section class="section" style="margin-top: -70px;">
           <div class="container">
-            <h1 class="title is-3">
+            <h1 class="title is-3 w3-text-indigo">
               <%= title %> <i class="fas fa-sitemap" style="color: lightslategrey;"></i> <i class="fas fa-cog" style="color: lightslategray;"></i>
             </h1>
           </div>
         
           <div class="container">
-              <p style="font-size: 12px;">
-                <strong>Purpose</strong>: To illustrate the "Delegation" attributes of this application in conjunction to the assignment in Lesson 9: Non-Functional Properties of APIs: Security <br>
+              <p style="font-size: 15px;">
+                <strong>Objective</strong>: To illustrate the "Delegation" attributes of <i>Data Industries</i> payment app in conjunction to the assignment <a href="http://opendata.metropolia.fi/koulutushaku/search.php#result-87398">Mastering the Fundamentals of RESTful API Design</a>: Lesson 9: Security <br>
                 <strong>Delegation</strong> allows an existing website to handle developer sign-in/sign-up and subscription of products instead of using the built-in functionality in the developer portal. This enables the website to own the user data and perform the validation of in a custom way <sup>[1]</sup>.</br>
                 <strong>Run-Time/Packages</strong>: <a href="https://nodejs.org/en/docs/guides/getting-started-guide/">NodeJS</a>, <a href="https://expressjs.com/en/starter/generator.html">ExpressJS</a>, <a href="https://github.com/paypal/PayPal-node-SDK">PayPal REST SDK</a><br>
                 <strong>Transaction Testing </strong>: <a href="https://www.sandbox.paypal.com/us/home"><i class="fab fa-paypal"></i> Sandbox Account</a><br>
-                <strong>View code repository in </strong>: <a href="#"><i class="fab fa-github-alt"></i></a><br>
-                <strong>Prepared by</strong>: <a href="https://arnelimperial.bitbucket.io/">Arnel Imperial</a><br>
-                
+                    
           </div>
       </section>
+      <div class="container">
+        <div class="block">
+          <div class="columns">
+            <div class="column w3-panel w3-indigo w3-card-4 w3-margin w3-padding w3-round-xlarge">
+                <h4>
+                    Software Item: 1
+                   </h4>
+                   <p>
+                     Product Description: Machine Vision Packages
+                   </p>
+                   <p>
+                     Price: &#36; 500
+                  </p>
+                  <form action="/bill" method="post">
+                     <input type="submit" value="Pay with Paypal" class="button is-link is-inverted is-outlined">
+                   </form>
 
-      <section class="section" style="margin-top: -90px;">
-          <div class="container box">
-            <h4 class="title is-5 product">
-              Software Item: 1
-            </h4>
-            <p class="subtitle is-6 product">
-              Product Description: Machine Vision Packages
-            </p>
-            <p class="subtitle is-6 product">
-                Price: &#36; 500
-            </p>
-
-            <form action="/bill" method="post">
-              <input type="submit" value="Pay with Paypal" class="button is-link is-inverted is-outlined">
-            </form>
-          </div>
-          <div class="container box">
-              <h4 class="title is-5 product">
-                Software Item: 2
-              </h4>
-              <p class="subtitle is-6 product">
+            </div>
+            <div class="column w3-panel w3-indigo w3-card-4 w3-margin w3-padding w3-round-xlarge">
+                <h4>
+                    Software Item: 2
+                </h4>
+                <p>
                   Product Description: Data Mining and Visualization toolkit
                 </p>
-              <p class="subtitle is-6 product">
-                Price: &#36; 845,89
-              </p>
-              <form action="/bill1" method="post">
-                <input type="submit" value="Pay with Paypal" class="button is-link is-inverted is-outlined">
-              </form>
+                <p>
+                    Price: &#36; 845,89
+                </p>
+                <form action="/bill1" method="post">
+                  <input type="submit" value="Pay with Paypal" class="button is-link is-inverted is-outlined">
+                </form>
+
             </div>
-            <p style="font-size: 10px;">
-              References:<br>
-              <i>1. Vladvino. (n.d.). How to delegate user registration and product subscription. Retrieved from https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-setup-delegation </i><br>
-              <i>2. Media, T. (2017, October 21). Intro To The Node.js PayPal REST SDK. Retrieved from https://www.youtube.com/watch?v=7k03jobKGXM</i>
+
+
+
+          </div>
+        </div>
+        <p style="font-size: 12px;">References:<br>
+            <i>1. Vladvino. (n.d.). How to delegate user registration and product subscription. Retrieved from <a href="https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-setup-delegation">https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-setup-delegation</a></i><br>
+            <i>2. Media, T. (2017, October 21). Intro To The Node.js PayPal REST SDK. Retrieved from <a href="https://www.youtube.com/watch?v=7k03jobKGXM">https://www.youtube.com/watch?v=7k03jobKGXM</a></i><br>
+            <i>3. Paypal. (2019, February 07). Paypal/PayPal-node-SDK. Retrieved from <a href="https://github.com/paypal/PayPal-node-SDK">https://github.com/paypal/PayPal-node-SDK</a></i>
+
+
+        </p>
+
+      </div>
+
+      <section class="section">
+        <div class="container">
+            <footer class="footer">
+                <div class="content has-text-centered">
+                  <p>
+                    <strong>Data Industries</strong> by <a href="https://arnelimperial.bitbucket.io/">Arnel Imperial</a>. Source code @
+                    <a href="https://github.com/arnelimperial/data_Industries-node-payment-app"><i class="fab fa-github-alt" style="font-size: 17px;"></i></a>
+                 
+                  </p>
+                </div>
+              </footer> 
+
+        </div>
+
+      </section>
+
+
+
+     
+
+  
+
     
-            </p>
-           
-        </section>
-
-        
-      
-               
-        
-
-        
-
-
         
 
   </body>

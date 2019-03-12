@@ -8,16 +8,16 @@ a {
   color: #00B7FF;
 }
 
-.box{
-  background-color: indigo;
- 
-}
+
+
+
 .product{
   color: #fff;
 }
 
 h1.title{
-  color: indigo;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
 }
 
 p.is-5{

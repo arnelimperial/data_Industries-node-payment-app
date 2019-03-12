@@ -15,8 +15,8 @@ router.post('/bill', function(req, res, next){
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "http://localhost:3080/success",
-        "cancel_url": "http://localhost:3080/cancel"
+        "return_url": "http://localhost:3090/success",
+        "cancel_url": "http://localhost:3090/cancel"
     },
     "transactions": [{
         "item_list": {
@@ -51,7 +51,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 //Sucess route
-router.get('/sucess', function(req, res, next){
+router.get('/success', function(req, res, next){
   const payerId = req.query.PayerID;
   const paymentId = req.query.paymentId;
 
@@ -90,8 +90,8 @@ router.post('/bill1', function(req, res, next){
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "http://localhost:3040/success",
-        "cancel_url": "http://localhost:3040/cancel"
+        "return_url": "http://localhost:3090/success1",
+        "cancel_url": "http://localhost:3090/cancel"
     },
     "transactions": [{
         "item_list": {
@@ -126,7 +126,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 //Sucess route
-router.get('/sucess1', function(req, res, next){
+router.get('/success1', function(req, res, next){
   const payerId = req.query.PayerID;
   const paymentId = req.query.paymentId;
 
@@ -146,7 +146,7 @@ router.get('/sucess1', function(req, res, next){
         throw error;
     } else {
         console.log(JSON.stringify(payment));
-        res.send('Success');
+        res.send('Success. Thank you for using Data Industries payment app from PayPal REST-API');
     }
 });
 
