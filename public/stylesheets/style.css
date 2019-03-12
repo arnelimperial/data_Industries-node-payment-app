@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: 'Play', sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.box{
+  background-color: indigo;
+ 
+}
+.product{
+  color: #fff;
+}
+
+h1.title{
+  color: indigo;
+}
+
+p.is-5{
+  color: rgb(78, 102, 167);
+}
